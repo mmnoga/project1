@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* ----- menu styles -----*/
+.nav-content {
+  height: 50px;
+  list-style-type: none;
+  background-color: #4e4e4e;
+  text-align: right;
+}
+
+.disabled-link:hover {
+  cursor: not-allowed;
+}
+
+nav .logo {
+  float: left;
+  margin-left: 96px;
+  font-weight: 700;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  margin-left: 30px;
+}
+
+nav a:last-child {
+  margin-right: 96px;
+}
+
+/* ----- header styles ----- */
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  background-image: url("../img/mountain-landscape.jpg");
+  background-size: cover;
+}
+
+.header-content .bg-alpha {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.header-content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-content h2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-content .slogan {
+  position: absolute;
+  width: 40%;
+  padding-left: 96px;
+  z-index: 100;
+}
+
+.header-content .slogan .btn {
+  position: absolute;
+  padding: 5px 55px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  transition-property: background-color color;
+  transition-duration: 1s;
+  z-index: 100;
+}
+
+.header-content .slogan a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ----- employees content ----- */
+#employees-content {
+  padding: 40px 96px 40px 96px;
+}
+
+#employees-content h1 {
+  color: #152d41;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.employee {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  column-gap: 50px;
+}
+
+.ltr-picture:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.employee img {
+  height: 250px;
+  border-radius: 50%;
+}
+
+/* .employee .name-description {
+  margin: auto 0;
+} */
+
+.employee .employee-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.employee h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  flex-grow: 0;
+}
+
+.employee p {
+  font-size: 1.8rem;
+  padding-top: 12px;
+  flex-grow: 0;
+}
+
+/* ----- offer content ----- */
+#offer-content {
+  background-color: #405d78;
+  padding: 40px 96px 0 96px;
+}
+
+#offer-content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.main-content .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 150px;
+}
+
+.main-content .box-content {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 200px;
+  margin: 20px;
+  /* min-width: 130px; */
+  min-height: 130px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 5px 10px black;
+  transition: transform 0.5s;
+}
+
+.main-content .box-content:hover {
+  transform: scale(1.05);
+}
+
+.main-content .box-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.main-content .box-content p {
+  font-size: 1.4rem;
+}
+
+/* ----- footer content ----- */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 96px;
+  height: 71px;
+  background-color: #4e4e4e;
+}
+
+.footer-content h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+.footer-content .icon-box i {
+  margin-right: 15px;
+}
+
+.footer-content .iconcolor {
+  color: white;
+  font-size: 3rem;
+}
