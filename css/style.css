@@ -1,5 +1,9 @@
+/* ----- import font style -----*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /* font-family: 'Roboto', sans-serif; */
+
+/* ----- page styles -----*/
 
 html {
   font-family: "Roboto", sans-serif;
@@ -7,19 +11,20 @@ html {
 }
 
 .wrapper {
-  width: 1280px;
+  width: 960px;
   margin: 0 auto;
 }
 
 /* ----- menu styles -----*/
-.nav-content {
+
+nav {
   height: 50px;
   list-style-type: none;
   background-color: #4e4e4e;
   text-align: right;
 }
 
-.disabled-link:hover {
+nav .disabled-link:hover {
   cursor: not-allowed;
 }
 
@@ -43,16 +48,17 @@ nav a:last-child {
 }
 
 /* ----- header styles ----- */
-.header-content {
+
+header {
   position: relative;
   display: flex;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   background-image: url("../img/mountain-landscape.jpg");
   background-size: cover;
 }
 
-.header-content .bg-alpha {
+header .bg-alpha {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -60,13 +66,13 @@ nav a:last-child {
   z-index: 1;
 }
 
-.header-content h1 {
+header h1 {
   font-size: 3.6rem;
   font-weight: 700;
   color: white;
 }
 
-.header-content h2 {
+header h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 1.8rem;
@@ -74,14 +80,14 @@ nav a:last-child {
   color: white;
 }
 
-.header-content .slogan {
+header .slogan {
   position: absolute;
-  width: 40%;
+  width: 50%;
   padding-left: 96px;
   z-index: 100;
 }
 
-.header-content .slogan .btn {
+header .slogan .btn {
   position: absolute;
   padding: 5px 55px;
   font-size: 1.8rem;
@@ -94,12 +100,15 @@ nav a:last-child {
   z-index: 100;
 }
 
-.header-content .slogan a:hover {
+header .slogan a:hover {
   background-color: white;
   color: black;
 }
 
+/* main content: employess & offer */
+
 /* ----- employees content ----- */
+
 #employees-content {
   padding: 40px 96px 40px 96px;
 }
@@ -117,18 +126,18 @@ nav a:last-child {
   column-gap: 50px;
 }
 
-.ltr-picture:nth-of-type(even) {
+.employee:nth-of-type(even) {
   flex-direction: row-reverse;
+}
+
+.employee:nth-of-type(even) .employee-description * {
+  text-align: right;
 }
 
 .employee img {
   height: 250px;
   border-radius: 50%;
 }
-
-/* .employee .name-description {
-  margin: auto 0;
-} */
 
 .employee .employee-description {
   display: flex;
@@ -149,6 +158,7 @@ nav a:last-child {
 }
 
 /* ----- offer content ----- */
+
 #offer-content {
   background-color: #405d78;
   padding: 40px 96px 0 96px;
@@ -160,43 +170,43 @@ nav a:last-child {
   color: white;
 }
 
-.main-content .boxes {
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 150px;
+  padding: 40px;
 }
 
-.main-content .box-content {
-  display: inline-block;
+.box-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 0 0 200px;
+  flex: 0 0 140px;
   margin: 20px;
-  /* min-width: 130px; */
-  min-height: 130px;
+  width: 140px;
+  height: 140px;
   background-color: #f1f1f1;
   box-shadow: 0px 5px 10px black;
   transition: transform 0.5s;
 }
 
-.main-content .box-content:hover {
+.box-content:hover {
   transform: scale(1.05);
 }
 
-.main-content .box-content h2 {
+.box-content h2 {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-.main-content .box-content p {
+.box-content p {
   font-size: 1.4rem;
 }
 
 /* ----- footer content ----- */
-.footer-content {
+
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,15 +215,16 @@ nav a:last-child {
   background-color: #4e4e4e;
 }
 
-.footer-content h1 {
+footer h1 {
   font-size: 1.8rem;
   color: white;
 }
-.footer-content .icon-box i {
+
+footer .icon-box i {
   margin-right: 15px;
 }
 
-.footer-content .iconcolor {
+footer .iconcolor {
   color: white;
   font-size: 3rem;
 }
